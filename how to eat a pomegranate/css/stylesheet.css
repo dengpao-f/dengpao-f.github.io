@@ -1,0 +1,362 @@
+@font-face{
+    font-family: centuryGothic;
+    src:url(gothic.ttf);
+}
+
+@font-face{
+    font-family: centuryGothic;
+    src:url(gothicb.ttf);
+    font-weight: bold;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bgdotline{
+
+    background-image: url("dotline.png");
+    background-repeat: repeat-x;
+    height: 84px;
+
+}
+
+#blanka{
+    height: 23px;
+}
+
+#bgblock{
+    height: 611px;
+    background-color: #e77364;
+}
+
+#bgblocklight{
+    height: 611px;
+    background-color: #ebdfcd;
+    filter: opacity(50%);
+}
+
+#bgimagewrap{
+    position: absolute;
+    top: 26px;
+    width: 914px;
+    height:692px;
+}
+
+#bgimage{
+    position: absolute;
+    bottom: 56px;
+}
+
+#stepbgimage{
+    position: absolute;
+    bottom: 0px;
+    left: -433px;
+}
+
+.center{
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#toptitle{
+    position: absolute;
+    width: 325px;
+    height: 82px;
+}
+
+#whiteblock{
+    position: absolute;
+    right: 0px;
+    width: 125px;
+    height: 48px;
+    background-color: #ffffff;
+}
+
+.toptitletext{
+    position: relative;
+    float: right;
+    font-family: centuryGothic;
+    font-weight: bold;
+    font-size: 34px;
+    color: #5f1921;  
+}
+
+#contentwrapper {
+    top: 26px;
+    width: 914px;
+    height:692px;
+    overflow: none; 
+}
+
+nav{
+    position: absolute;
+    right: 120px;
+    top: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-family: centuryGothic;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    color: #5f1921;
+    background-color: #ebdfcd;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.navrecentpage{
+    background-color: #5f1921;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #c15049;
+    color: #ffffff;
+}
+
+#decorationblocks{
+    position: absolute;
+    height:10px;
+    width: 120px;
+    right: 0px;
+    bottom: 611px;
+}
+
+#blocka{
+    position: relative;
+    margin: 2px;
+    width: 26px;
+    height: 10px;
+    background-color: #5f1921;
+    float: right;
+}
+
+#blockb{
+    position: relative;
+    margin: 2px;
+    width: 26px;
+    height: 10px;
+    background-color: #c15049;
+    float: right;
+}
+
+#blockc{
+    position: relative;
+    margin: 2px;
+    width: 26px;
+    height: 10px;
+    background-color: #e77364;
+    float: right;
+}
+
+#blockd{
+    position: relative;
+    margin: 2px;
+    width: 26px;
+    height: 10px;
+    background-color: #ebdfcd;
+    float: right;
+}
+
+
+#indextitle{
+    position: absolute;
+    overflow: none;
+    right: 13px;
+    bottom: 43px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.indextitle{
+    float: right;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+a.indextitle {
+    font-family: centuryGothic;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #5f1921;
+    text-decoration: none;
+}
+
+#indextitle:hover .indextitle{
+    color: #ffffff;
+    background-color: #5f1921;
+    box-shadow: none;
+}
+
+
+main{
+    bottom: 9px;
+    width: 914px;
+    height: 595px;
+    background-color: #86b43b;
+}
+
+#main{
+    padding: 0px;
+    float: none;
+    position: absolute;
+    bottom: 9px;
+    width: 914px;
+    height: 595px;
+}
+
+#instruction{
+    position: relative;
+    height: 169px;
+    z-index: 50;
+    margin-bottom: 11px;
+}
+
+#textbuble{
+    position: absolute;
+}
+
+.step{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 11px;
+    width: 222px;
+    height: 48px;
+}
+
+.step:hover .thumbnailfilter{
+    -webkit-filter: opacity(0%);
+    filter: opacity(0%);
+}
+
+.step:hover .thumbnailtext{
+    color: #5f1921;
+    font-size: 22px;
+}
+
+.step a{
+    width:222px;
+    height:48px;
+}
+
+.thumbnail{
+    position: absolute;
+}
+
+.thumbnailfilter{
+    width:222px;
+    height:48px;
+    z-index: 10;
+    display: block;
+    position: absolute;
+    background-color: #5f1921;
+    -webkit-filter: opacity(70%);
+    filter: opacity(70%);
+}
+
+.thumbnailtext{
+    font-family: centuryGothic;
+    font-size: 22px;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    margin: auto;
+    text-align: center;
+    z-index: 15;
+}
+
+.stepimage{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 11;
+    filter:drop-shadow(-2px -2px 2px #000000);
+}
+
+.instructionnum{
+    font-family: centuryGothic;
+    font-weight: bold;
+    font-size: 22px;
+    color: #5f1921;
+    position: absolute;
+    padding: 17px;
+}
+
+#instructiontextwrap{
+    width: 215px;
+    height: 169px;
+    position: relative;
+}
+
+.instructiontext{
+    font-family: centuryGothic;
+    font-size: 15px;
+    color: #5f1921;
+    position: absolute;
+    padding: 17px;
+    bottom: 0px;
+}
+
+#textbox{
+    position:absolute;
+    right:50px;
+    top: 50px;
+    width: 279px;
+    height: 519px;
+}
+
+h1{
+    font-family: centuryGothic;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #e77364;
+}
+
+h2{
+    font-family: centuryGothic;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #c15049;
+}
+
+p{
+    text-align: right;
+    font-family: centuryGothic;
+    font-size: 15px;
+    color: #5f1921;
+    padding: 0px;
+    margin: 0px;
+}
